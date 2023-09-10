@@ -1,0 +1,44 @@
+<h2>Paso 1: Configurar un Proyecto en la Consola de Desarrolladores de Google</h2>
+<ol>
+    <li>Abre tu navegador web y ve a la <a href="https://console.developers.google.com/" target="_blank">Consola de Desarrolladores de Google</a>.</li>
+    <li>Inicia sesión con tu cuenta de Google si no lo has hecho.</li>
+    <li>Haz clic en el botón "Seleccionar proyecto" o "Crear proyecto" en la esquina superior derecha. Si creas un nuevo proyecto, dale un nombre significativo.</li>
+    <li>Una vez que tengas el proyecto seleccionado o creado, haz clic en "Habilitar APIs y servicios" para acceder a la biblioteca de APIs.</li>
+</ol>
+
+<h2>Paso 2: Habilitar la API de Google Sheets</h2>
+<ol start="5">
+    <li>En la página de la Consola de Desarrolladores, utiliza la barra de búsqueda para encontrar y seleccionar la API de Google Sheets.</li>
+    <li>Haz clic en el botón "Habilitar" para habilitar la API de Google Sheets para tu proyecto.</li>
+</ol>
+
+<h2>Paso 3: Configurar Credenciales</h2>
+<ol start="7">
+    <li>En la página de la API de Google Sheets, haz clic en "Credenciales" en el menú de la izquierda.</li>
+    <li>Haz clic en el botón "Crear credenciales" y selecciona "ID de cliente de OAuth".</li>
+    <li>Selecciona "Aplicación web" como tipo de aplicación.</li>
+    <li>Ingresa un nombre para la aplicación web.</li>
+    <li>En la sección "URI de redireccionamiento autorizado", ingresa la URL a la que Google Sheets redirigirá después de la autorización. Esto podría ser una página de tu sitio web donde manejarás la respuesta de autorización. Asegúrate de que esta URL esté correctamente configurada en tu aplicación.</li>
+    <li>Haz clic en "Crear" para crear el ID de cliente.</li>
+    <li>Una vez que hayas creado el ID de cliente, podrás ver el client_id. Guárdalo en un lugar seguro.</li>
+</ol>
+
+<h2>Paso 4: Obtener la API Key</h2>
+<ol start="14">
+    <li>En la página de la Consola de Desarrolladores, en el menú lateral izquierdo, selecciona "Credenciales".</li>
+    <li>Haz clic en "Crear credenciales" y selecciona "Clave de API".</li>
+    <li>Aparecerá una ventana emergente con la API Key generada. Guárdala en un lugar seguro.</li>
+</ol>
+
+<h2>Paso 5: Obtener el Spreadsheet ID</h2>
+<ol start="17">
+    <li>Abre la hoja de Google Sheets que deseas utilizar con la API.</li>
+    <li>Copia el ID de la hoja de Google Sheets desde la URL del navegador. El ID es la cadena de caracteres entre "/d/" y "/edit" en la URL. Por ejemplo, si la URL es "https://docs.google.com/spreadsheets/d/abc123/edit", el ID del spreadsheet sería "abc123".</li>
+</ol>
+
+<h2>Paso 6: Configurar la Redirect URL</h2>
+<ol start="19">
+    <li>Asegúrate de que la Redirect URL que ingresaste en el paso 11 coincida con la que utilizarás en tu aplicación.</li>
+</ol>
+
+¡Listo! Ahora tienes el client_id, la api key, el spreadsheet id y la redirect URL necesarios para trabajar con la API de Google Sheets en tu aplicación. Asegúrate de mantener esta información segura y no compartirla públicamente.
